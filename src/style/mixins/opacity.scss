@@ -1,0 +1,9 @@
+// 不透明度
+// example:
+//   1. @include opacity;      //参数使用默认值
+//   2. @include opacity(80);  //传递参数
+
+@mixin opacity($opacity:50) {
+    opacity: $opacity / 100;
+    filter: alpha(opacity=$opacity);
+}

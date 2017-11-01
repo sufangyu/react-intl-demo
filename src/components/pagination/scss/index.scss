@@ -1,0 +1,50 @@
+@import '../../../style/import';
+
+.pagination {
+
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    font-size: $pagination-font-size;
+  }
+
+  &__button__prev,
+  &__button__next,
+  &__number {
+    flex: 1;
+  }
+
+  &__button {
+
+    &__prev,
+    &__next {
+      a {
+        cursor: pointer;
+        display: inline-block;
+        height: $pagination-button-height;
+        line-height: $pagination-button-height;
+        padding: 0 15px;
+        border-radius: $radius-md;
+        color: $pagination-button-text;
+        background-color: $pagination-button-background;
+        border: 1px solid $border-color-base; /* no */
+        transition: background-color 0.2s, opacity 0.2s;
+
+        &:active {
+          background-color: $pagination-button-background-active;
+        }
+        
+        &[disabled] {
+          color: $pagination-button-text-disabled;
+          background-color: $pagination-button-background-disabled;
+        }
+      }
+    }
+
+    &__next {
+      text-align: right;
+    }
+  }
+
+}

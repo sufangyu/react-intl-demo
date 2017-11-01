@@ -1,0 +1,146 @@
+@import "./import";
+@import "./normalize";
+@import "./animate";
+
+// 基础样式
+*[contenteditable] {
+  -webkit-user-select: auto !important;
+}
+*:focus {
+  outline: none;
+}
+input,
+textarea,
+select {
+  -webkit-appearance: none;
+  outline: none;
+  resize: none;
+  background-color: transparent;
+  text-size-adjust: 100%;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+  margin: 0;
+  font-weight: 400;
+}
+p {
+  margin: 0;
+}
+i,
+em {
+  font-style: normal;
+}
+body,
+html {
+  background-color: $fill-body;
+  height: 100%;
+  text-size-adjust: 100%;
+}
+html {
+  font-size: 50px;
+  line-height: 1.15;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  line-height: $line-height-base;
+  font-family: $font-family-body;
+  font-size: $font-size-base;
+  color: $color-text-base ;
+  margin: 0 auto;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  color: $color-link;
+  text-decoration: none;
+  user-select: none;
+  outline: none;
+
+  &:hover {
+    color: $color-link-hover;
+  }
+  &:active {
+    color: $color-link-tap;
+  }
+}
+img {
+  max-width: 100%;
+}
+
+
+// page 
+.page {
+
+  &__header {
+    position: relative;
+    overflow: hidden;
+    padding: 40px 25px 25px;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  &__desc {
+    line-height: $line-height-paragraph;
+    padding: 15px 0 0;
+    font-size: $font-size-base;
+    color: $color-text-caption;
+    font-weight: 400;
+  }
+}
+
+// text content
+.text__content {
+  text-align: justify;
+
+  p {
+    line-height: $line-height-paragraph;
+    margin: 0 0 15px;
+  }
+}
+
+// demo preview
+.demo__preview {
+  &__title {
+    padding: 15px 15px 10px 15px;
+    font-size: $font-size-caption;
+    font-weight: 700;
+    position: relative;
+    color: $color-text-base;
+  }
+
+  &__sub__title {
+    color: $color-text-caption;
+    font-size: $font-size-base;
+    padding: 15px 10px;
+  }
+
+  &__content {
+    padding: 10px 0;
+
+    &--bg {
+      background-color: $fill-base;
+    }
+  }
+}

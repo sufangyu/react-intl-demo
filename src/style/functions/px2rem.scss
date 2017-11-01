@@ -1,0 +1,17 @@
+// px 转换 rem 
+// @param  $px             原 px 尺寸
+// @param  $base-font-size 根节点字体大小. 默认 100px
+// @return                 转换后 rem 尺寸
+// @example:
+//   width: px2rem(100px);
+//   font-size: px2rem(16px);
+
+@function px2rem($px, $base-font-size: 100px) {
+    @if (unitless($px)) {
+        @warn "Assuming #{$px} to be in pixels, attempting to convert it into pixels for you";
+        @return px2rem($px + 0px);
+    } @else if (unit($px) == rem) {
+        @return $px;
+    }
+    @return ($px / $base-font-size) * 1rem;
+}

@@ -1,0 +1,18 @@
+// 单行/多行内容超出显示省略号
+// example:
+//   1. @include ellipsis();        // 单行
+//   2. @include ellipsisMulti(2);  // 多行
+
+@mixin ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin ellipsisMulti($line:2) {
+  overflow: hidden;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}

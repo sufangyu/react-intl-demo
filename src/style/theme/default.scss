@@ -1,0 +1,244 @@
+// $import "../color";
+
+// Base unit
+$hd  : 1px;      // 基本单位
+
+// 字体
+$font-family-body       : PingFang SC,Helvetica Neue,Hiragino Sans GB,Helvetica,Microsoft YaHei,Arial;
+$font-family-code       : Consolas, Menlo, Courier, monospace;
+$font-family-num        : Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,SimSun,sans-serif;
+
+
+// 色彩
+// ---
+// 全局/品牌色
+$brand-primary                      : #108ee9;
+$brand-primary-tap                  : #1284d6;
+$brand-success                      : #6abf47;
+$brand-warning                      : #ffc600;
+$brand-error                        : #f4333c;
+$brand-important                    : #ff5b05;  // 用于小红点
+$brand-wait                         : #108ee9;
+
+// 文字色
+$color-text-base                    : #000;          // 基本
+$color-text-base-inverse            : #fff;          // 基本 - 反色
+$color-text-secondary               : #a4a9b0;       // 辅助色
+$color-text-auxiliary               : #999;          // 备用色
+$color-text-placeholder             : #bbb;          // 文本框提示
+$color-text-disabled                : #bbb;          // 失效
+$color-text-caption                 : #888;          // 辅助描述
+$color-text-paragraph               : #333;          // 段落
+$color-link                         : $brand-primary;      // 链接
+$color-link-tap                     : $brand-primary-tap;  // 链接按下
+$color-link-hover                   : $brand-primary-tap;  // 链接划过
+
+// 背景色
+$fill-base                          : #fff;             // 组件默认背景
+$fill-body                          : #f5f5f9;          // 页面背景
+$fill-tap                           : #ddd;             // 组件默认背景 - 按下
+$fill-disabled                      : #ddd;             // 通用失效背景
+$fill-mask                          : rgba(0,0,0, .4);  // 遮罩背景
+$color-icon-base                    : #ccc;             // 许多小图标的背景，比如一些小圆点，加减号
+$fill-grey                          : #f7f7f7;          // 灰色背景
+
+// 透明度
+$opacity-disabled                   : 0.3;                // switch checkbox radio 等组件禁用的透明度
+
+
+// 边框色
+$border-color-base                  : #ddd;
+
+
+// 字体尺寸
+// ---
+$font-size-icontext   : 10 * $hd;
+$font-size-caption-sm : 12 * $hd;
+$font-size-base       : 14 * $hd;
+$font-size-subhead    : 15 * $hd;
+$font-size-caption    : 16 * $hd;
+$font-size-heading    : 17 * $hd;
+
+// 圆角
+// ---
+$radius-xxs    : 1 * $hd;
+$radius-xs     : 2 * $hd;
+$radius-sm     : 3 * $hd;
+$radius-md     : 5 * $hd;
+$radius-lg     : 7 * $hd;
+$radius-circle : 50%;     // 圆形
+
+
+// 边框尺寸
+// ---
+$border-width-sm : 1px;
+$border-width-md : 1px;
+$border-width-lg : 2 * $hd;
+
+// 间距
+// ---
+// 水平间距
+$h-spacing-sm :  5 * $hd;
+$h-spacing-md :  8 * $hd;
+$h-spacing-lg : 15 * $hd;
+
+// 垂直间距
+$v-spacing-xs :  3 * $hd;
+$v-spacing-sm :  6 * $hd;
+$v-spacing-md :  9 * $hd;
+$v-spacing-lg : 15 * $hd;
+$v-spacing-xl : 21 * $hd;
+
+// 高度
+// ---
+$line-height-base      : 1;      // 单行行高
+$line-height-paragraph : 1.5;    // 多行行高
+
+// 图标尺寸
+// ---
+$icon-size-xxs : 15 * $hd;
+$icon-size-xs  : 18 * $hd;
+$icon-size-sm  : 21 * $hd;
+$icon-size-md  : 24 * $hd;       // 导航条上的图标、grid的图标大小
+$icon-size-lg  : 36 * $hd;
+$icon-size-xl  : 48 * $hd;
+
+
+// 动画缓动
+// ---
+$easeInOutQuint    : cubic-bezier(0.86, 0, 0.07, 1);
+$easeOutFunction   : cubic-bezier(0.23, 1, 0.32, 1);
+$easeInOutFunction : cubic-bezier(0.445, 0.05, 0.55, 0.95);
+$fadeInOutFunction : cubic-bezier(0.55, 0, 0.55, 0.2);
+
+// 组件变量
+// ---
+// search-bar
+$search-bar-fill         : $fill-base;
+$search-bar-fill-dark    : $brand-primary;
+$search-bar-height       : 44 * $hd;
+$search-bar-input-height : 28 * $hd;
+$search-bar-font-size    : 15 * $hd;
+
+
+// navbar
+$navbar-fill                    : $fill-base;
+$navbar-color-text-base         : $color-text-base;
+$navbar-fill-dark               : $brand-primary;
+$navbar-color-text-base-inverse : $color-text-base-inverse;
+$navbar-height                  : 44 * $hd;
+
+// tab-bar
+$tab-bar-fill          : $fill-base;
+$tab-bar-height        : 44 * $hd;
+
+
+// notice-bar
+$notice-bar-height     : 36 * $hd;
+$notice-bar-color-text : #f76a24;
+$notice-bar-fill       : #fefcec;
+$notice-bar-font-size  : $font-size-base;
+
+
+// badge
+$badge-fill-base       : $brand-important;
+$badge-font-size-base  : $font-size-caption-sm;
+$badge-color-text-base : $color-text-base-inverse;
+$badge-shadow-color    : $fill-base;
+$badge-size-base-sm    : 8 * $hd;
+$badge-size-base-md    : 20 * $hd;
+
+
+// list
+$list-thumb-size       : 24 * $hd;
+$list-arrow-size       : 14 * $hd;
+
+// menu
+$menu-thumb-size       : 18 * $hd;
+$menu-arrow-size       : 12 * $hd;
+
+
+// button
+$button-height-small                 : 24 * $hd;
+$button-height-default               : 32 * $hd;
+$button-height-large                 : 42 * $hd;
+$button-size-small                   : 12 * $hd;
+$button-size-default                 : 14 * $hd;
+$button-size-large                   : 16 * $hd;
+$button-space-small                  : 10 * $hd;
+$button-space-default                : 15 * $hd;
+$button-space-large                  : 20 * $hd;
+$button-primary-fill                 : $brand-primary;
+$button-primary-tap                  : $brand-primary-tap;
+$button-primary-border               : $brand-primary;
+$button-primary-text-color           : $color-text-base-inverse;
+$button-primary-text-color-inverse   : $brand-primary;
+$button-secondary-fill               : #f04134;
+$button-secondary-tap                : #e53e32;
+$button-secondary-border             : #f04134;
+$button-secondary-text-color         : $color-text-base-inverse;
+$button-secondary-text-color-inverse : #f04134;
+$button-default-fill                 : $fill-base;
+$button-default-tap                  : $fill-tap;
+$button-default-border               : $border-color-base;
+$button-default-text-color           : $color-text-base;
+$button-disabled-text-color          : $color-text-disabled;
+$button-disabled-border              : $border-color-base;
+$button-disabled-fill                : $fill-disabled;
+
+
+// pagination
+$pagination-active                     : $brand-primary;
+$pagination-font-size                  : $font-size-caption;
+$pagination-button-height              : 42 * $hd;
+$pagination-button-text                : $color-text-base;
+$pagination-button-text-disabled       : $color-text-disabled;
+$pagination-button-background          : $fill-base;
+$pagination-button-background-active   : $fill-tap;
+$pagination-button-background-disabled : $fill-disabled;
+$pagination-dot-size                   : 10 * $hd;
+
+// steps
+$steps-box-small                       : 18 * $hd;
+$steps-box-large                       : 22 * $hd;
+$steps-progress-size-small             : 1 * $hd;
+$steps-progress-size-large             : 2 * $hd;
+$steps-font-size-small                 : 14 * $hd;
+$steps-font-size-large                 : 16 * $hd;
+$steps-font-color                      : #ddd;
+$steps-border                          : #ddd;
+$steps-finish-color                    : $brand-primary;
+$steps-process-color                   : $brand-primary;
+$steps-error-color                     : #f4333c;
+$steps-progress-fill-color-base        : #ddd;
+$steps-content-width-max               : 80 * $hd;
+
+
+// tabs
+$tab-height            : 44 * $hd;
+
+
+// accordion
+$accordion-height      : 44 * $hd;
+
+
+// divider
+$divider-spacing-sm     : 15 * $hd;
+$divider-spacing-md     : 30 * $hd;
+$divider-spacing-lg     : 55 * $hd;
+
+
+// notification & toast
+$notification-fill-base : $fill-base;
+$toast-fill-base : rgba(0,0,0,0.75);
+
+
+// z-index
+$progress-zindex        : 2000;
+$popover-zindex         : 1999;
+$toast-zindex           : 1999;
+$action-sheet-zindex    : 1000;    // actonsheet 会放到 popup / modal 中
+$picker-zindex          : 1000;
+$popup-zindex           : 999;
+$modal-zindex           : 999;     // modal.alert 应该最大，其他应该较小
+$tabs-pagination-zindex : 999;

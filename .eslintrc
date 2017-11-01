@@ -1,0 +1,42 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "plugins": [
+    "jsx-a11y",
+  ],
+  "globals":{
+    "document": true,
+    "window": true,
+    "localStorage": true,
+  },
+  "settings": {},
+  "rules": {
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
+    "import/no-extraneous-dependencies": [0],
+    // 允许使用 console
+    "no-console": 0,
+    // 允许使用 alert
+    "no-alert": 0,
+    // 允许使用 javascript:
+    "no-script-url": 0,
+    // 允许使用 ++, --
+    "no-plusplus": 0,
+    // 允许标识符中有悬空下划线
+    "no-underscore-dangle": 0,
+    // 可以修改参数的属性
+    "no-param-reassign": ["error", { "props": false }],
+    // 换行风格
+    "linebreak-style": [0, "windows"],
+    "jsx-a11y/href-no-hash": 0,
+    "react/prefer-stateless-function": [0, { "ignorePureComponents": <ignorePureComponents> }],
+    "react/forbid-prop-types": [0, { "forbid": [] }],
+    "react/require-default-props": 0,
+    // 箭头函数体使用大括号
+    "arrow-body-style": [2, "always"],
+  },
+}
